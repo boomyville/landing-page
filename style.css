@@ -20,9 +20,18 @@ body, .header, .logo, .links, .top, .top-left, .top-right, .middle, .middle-head
 	font-family: "Trebuchet MS", sans-serif;
 }
 
+
 .header, .top {
 	background: #bbbbbb;
 	padding: 24px;
+	gap: 24px;
+}
+
+@media (max-width: 600px) {
+  .header, .top, .middle-container, .form-container {
+    flex-direction: column;
+    gap: 12px;
+  }
 }
 
 .middle, .form-container {
@@ -64,6 +73,7 @@ a {
 .top-right {
 	display: flex;
 	flex: 1;
+  height: 100%;
 	justify-content: flex-end;
 }
 
@@ -98,7 +108,6 @@ a {
 .form-container{
 	border-radius: 25px;
   background: #73AD21;
-  height: 200px;
   margin: 30px;
 }
 
